@@ -1,5 +1,5 @@
 export interface PictureJson {
-  img: string;
+  picture: string;
 }
 
 export interface PetJson {
