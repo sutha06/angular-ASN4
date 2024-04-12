@@ -10,13 +10,13 @@ table{
   width: 600px;
 }
 
-span.flower_label{
+span.pet_label{
   color: #673ab7;
   font-size: larger;
   font-weight: bolder;
 }
 
-span.flower_price{
+span.pet_price{
   font-size: larger;
   font-weight: bolder;
   color: #00C853;

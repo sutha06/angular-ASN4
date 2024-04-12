@@ -1,0 +1,16 @@
+<h2>Pet Catalog</h2>
+<table>
+  <tr *ngFor="let f of (pets | async)">
+    <td>
+      <a [routerLink]="['pets',f.name]">
+        <img class="thumb"
+             [src]="f.petImgSrc" [alt]="f.petKind">
+      </a>
+    </td>
+    <td>
+      <span class="pet_label">{{f.name}}</span>&nbsp;&nbsp;
+      <span class="pet_price">{{f.age | currency}}</span><br>
+      {{f.petKind}}
+    </td>
+  </tr>
+</table>
