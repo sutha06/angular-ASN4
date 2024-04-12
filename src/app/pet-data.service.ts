@@ -20,11 +20,11 @@ export class PetDataService {
     pet.name = petJson.name;
     pet.petKind = petJson.petKind
     pet.age = petJson.age;
-    pet.petImgSrc = PetDataService.imageFolder + petJson.picture
+    pet.petImgSrc = PetDataService.imageFolder + petJson.petPicture
     return pet;
   }
 
-  public getAllFlowers(): Observable<Pet[]> {
+  public getAllPets(): Observable<Pet[]> {
     return this.http.get<DataJson>(PetDataService.dataUrl)
       .pipe(
         map(data => data._embedded.pets
@@ -32,7 +32,7 @@ export class PetDataService {
       )
   }
 
-  public getFlowerById(id: string): Observable<Pet | undefined>{
+  public getPetById(id: string): Observable<Pet | undefined>{
     return this.http.get<PetJson>(`${PetDataService.dataUrl}/${id}`)
       .pipe(map(pet => PetDataService.json2Pet(pet)));
   }
