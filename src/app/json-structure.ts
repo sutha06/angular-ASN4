@@ -1,19 +1,16 @@
 export interface PictureJson {
-  small: string;
-  large: string;
+  img: string;
 }
 
-export interface FlowerJson {
-  id: string;
-  label: string;
-  price: number;
-  description: string;
+export interface PetJson {
+  name: string;
+  petKind: string;
+  age: number;
   picture: PictureJson;
-  wiki: string;
 }
 
 export interface CatalogJson {
-  flowers: FlowerJson[];
+  pets: PetJson[];
 }
 
 export interface DataJson {
