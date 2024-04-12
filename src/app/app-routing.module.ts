@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {FlowerDetailsComponent} from "./flower-details/flower-details.component";
-import {FlowerIndexComponent} from "./flower-index/flower-index.component";
+import {PetDetailsComponent} from "./pet-details/pet-details.component";
+import {PetIndexComponent} from "./pet-index/pet-index.component";
 
 const routes: Routes = [
-  {path: '', component: FlowerIndexComponent},
-  {path: 'flowers/:id', component: FlowerDetailsComponent},
+  {path: '', component: PetIndexComponent},
+  {path: 'flowers/:id', component: PetDetailsComponent},
   {path: '**', redirectTo: ''}
 ];
 
