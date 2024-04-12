@@ -1,8 +1,7 @@
-export class Flower {
-  id: string = '';
+export class Pet {
   name: string = '';
-  label: string = '';
-  price: number = 0.0;
+  petKind: string = '';
+  age: number = 0.0;
   description: string = '';
   smallImgSrc: string = '';
   largeImgSrc: string = '';
