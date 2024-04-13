@@ -2,14 +2,11 @@
 <table>
   <tr *ngFor="let f of (pets | async)">
     <td>
-      <a [routerLink]="['pets',f.name]">
-        <img class="thumb"
-             [src]="f.petImgSrc" [alt]="f.petKind">
-      </a>
+      <img class="thumb" [src]="f.petImgSrc" [alt]="f.petKind">
     </td>
     <td>
-      <span class="pet_label">{{f.name}}</span>&nbsp;&nbsp;
-      <span class="pet_price">{{f.age | currency}}</span><br>
+      <span class="pet_name">Name: {{f.name}}</span>&nbsp;&nbsp;
+      <span class="pet_age">Age: {{f.age}}</span><br>Pet Type:
       {{f.petKind}}
     </td>
   </tr>

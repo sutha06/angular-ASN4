@@ -10,13 +10,13 @@ table{
   width: 600px;
 }
 
-span.pet_label{
+span.pet_name{
   color: #673ab7;
   font-size: larger;
   font-weight: bolder;
 }
 
-span.pet_price{
+span.pet_age{
   font-size: larger;
   font-weight: bolder;
   color: #00C853;
