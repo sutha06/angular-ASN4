@@ -4,9 +4,10 @@ import {PetDetailsComponent} from "./pet-details/pet-details.component";
 import {PetIndexComponent} from "./pet-index/pet-index.component";
 
 const routes: Routes = [
-  {path: '', component: PetIndexComponent},
-  {path: 'flowers/:id', component: PetDetailsComponent},
-  {path: '**', redirectTo: ''}
+  {path: 'index', component: PetIndexComponent},
+  {path: 'pets/:name', component: PetDetailsComponent},
+  // { path: 'owners', component: OwnersComponent },
+  {path: '', redirectTo: '/index', pathMatch: 'full'},
 ];
 
 @NgModule({
