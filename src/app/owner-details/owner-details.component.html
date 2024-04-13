@@ -1,0 +1,8 @@
+<h2>Owner Catalog</h2>
+<table>
+  <tr *ngFor="let f of (owners | async)">
+    <td>
+      <span class="owner_fname">First Name: {{f.firstName}}</span>&nbsp;&nbsp;
+      <span class="owner_lname">Last Name: {{f.lastName}}</span>
+  </tr>
+</table>

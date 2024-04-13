@@ -12,6 +12,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule, MatIconButton} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
+import {OwnerDetailsComponent} from "./owner-details/owner-details.component";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MatIconModule} from "@angular/material/icon";
     FooterComponent,
     PetIndexComponent,
     PetDetailsComponent,
-    HeaderComponent
+    HeaderComponent,
+    OwnerDetailsComponent
   ],
   imports: [
     BrowserModule,

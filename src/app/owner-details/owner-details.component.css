@@ -1,0 +1,28 @@
+.owner_fname{
+  color: #673ab7;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.owner_lname{
+  font-size: larger;
+  font-weight: bolder;
+  color: #ff9800;
+  margin-left: 1em;
+}
+
+
+.text_box{
+  width: 300px;
+}
+
+a{
+  color: limegreen;
+  font-weight: bolder;
+}
+
+p.message {
+  font-size: larger;
+  font-weight: bolder;
+  color: crimson;
+}
