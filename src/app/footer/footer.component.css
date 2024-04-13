@@ -14,3 +14,7 @@ footer{
 footer .hart{
   color: #e91e63;
 }
+mat-toolbar{
+  position: fixed;
+  bottom: 0;
+}
