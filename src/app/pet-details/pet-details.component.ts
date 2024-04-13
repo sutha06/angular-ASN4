@@ -20,7 +20,7 @@ export class PetDetailsComponent implements OnDestroy {
     const name: string | null =  activatedRoute.snapshot.paramMap.get('name');
     if(name != null){
       this.petSub =
-        petDataService.getPetById(name).subscribe(pet => this.pet = pet);
+        petDataService.getPetByName(name).subscribe(pet => this.pet = pet);
     }
   }
 
