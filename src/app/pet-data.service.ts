@@ -32,8 +32,8 @@ export class PetDataService {
       )
   }
 
-  public getPetById(id: string): Observable<Pet | undefined>{
-    return this.http.get<PetJson>(`${PetDataService.dataUrl}/${id}`)
+  public getPetByName(name: string): Observable<Pet | undefined>{
+    return this.http.get<PetJson>(`${PetDataService.dataUrl}/${name}`)
       .pipe(map(pet => PetDataService.json2Pet(pet)));
   }
 }
