@@ -13,6 +13,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule, MatIconButton} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {OwnerDetailsComponent} from "./owner-details/owner-details.component";
+import {MatTable} from "@angular/material/table";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {OwnerDetailsComponent} from "./owner-details/owner-details.component";
     MatToolbarModule,
     MatIconButton,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatTable
   ],
   providers: [
     provideAnimationsAsync()

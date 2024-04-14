@@ -5,8 +5,8 @@ import {PetIndexComponent} from "./pet-index/pet-index.component";
 import {OwnerDetailsComponent} from "./owner-details/owner-details.component";
 
 const routes: Routes = [
-  {path: 'index', component: PetIndexComponent},
-  {path: 'pets', component: PetDetailsComponent},
+  {path: 'index', component:  PetDetailsComponent},
+  {path: 'pets', component: PetIndexComponent},
   {path: 'owners', component: OwnerDetailsComponent },
   {path: '', redirectTo: '/index', pathMatch: 'full'},
 ];
