@@ -1,22 +1,11 @@
-<ng-container *ngIf="pet !== undefined; else not_found">
-  <p>
-    <span class="pet_label">Pet:</span>
-    <span class="pet_name">{{pet.name}}</span>
-  </p>
-  <p>
-    <img [src]='pet.petPhoto' alt="picture of the animal">
-    <span class='pet_image'>{{pet.age}}</span>
-  </p>
-  <div class="text_box">
-    {{pet.petKind}}
-  </div>
-</ng-container>
+<H2>Click clinks to desired search</H2>
 <ng-template #not_found>
   <p class="message">
     The data is not found.
   </p>
 </ng-template>
 <p>
-  <a routerLink="/">Pet Catalog</a>
+  <a routerLink="/pets">Pet Catalog</a><br>
+  <a routerLink="/owners">Pet Owner Catalog</a>
 </p>
 

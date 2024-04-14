@@ -1,7 +1,9 @@
 h2 {
-  color: #00bcd4;
+  text-align: center;
+  color: #5e4b8b; /* Deep purple for headings */
+  margin-bottom: 20px;
+  font-size: 2em;
 }
-
 td{
   padding: 6px
 }

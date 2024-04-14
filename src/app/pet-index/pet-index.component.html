@@ -1,9 +1,15 @@
 <h2>Pet Catalog</h2>
+<p>
+  <a routerLink="/">Home</a><br>
+  <a routerLink="/owners">Pet Owners Catalog</a>
+</p>
 <table>
   <tr *ngFor="let f of (petsList | async)">
     <td>
+      <a [routerLink]="['pet', f.id]">
       <img class="thumb"
-           [src]="f.petPhoto" >
+           [src]="f.imageSrc" >
+      </a>
     </td>
     <td>
       <span class="pet_name">Name: {{f.name}}</span>&nbsp;&nbsp;
