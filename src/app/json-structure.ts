@@ -1,7 +1,8 @@
 export interface PictureJson {
-  imgSrc: string;
+  href: string;
 }
 export interface PetJson {
+  id: number;
   name: string;
   petKind: string;
   age: number;
