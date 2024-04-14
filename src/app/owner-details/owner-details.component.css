@@ -1,6 +1,6 @@
 h2 {
   text-align: center;
-  color: #5e4b8b; /* Deep purple for headings */
+  color: #5e4b8b;
   margin-bottom: 20px;
   font-size: 2em;
 }
@@ -11,23 +11,23 @@ h2 {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  background-color: #f3f1f5; /* Light purple background for the catalog area */
+  background-color: #f3f1f5;
 }
 
 .owner-card {
   background: #ffffff;
-  border-left: 5px solid #7a57d1; /* A purple accent on the card */
+  border-left: 5px solid #7a57d1;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(94, 75, 139, 0.2); /* Purple-tinted shadow */
+  box-shadow: 0 4px 6px rgba(94, 75, 139, 0.2);
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: calc(33.333% - 20px); /* 3 items per row with 20px gap */
-  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  width: calc(33.333% - 20px);
+  transition: transform 0.3s ease-in-out;
 }
 
 .owner-card:hover {
-  transform: translateY(-5px); /* Slight raise effect on hover */
+  transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(94, 75, 139, 0.3);
 }
 
@@ -37,24 +37,24 @@ h2 {
 
 .owner-name {
   font-size: 1em;
-  color: #5e4b8b; /* Echoing the purple theme in text */
+  color: #5e4b8b;
   margin: 5px 0;
 }
 
 .owner-name span {
   font-weight: bold;
-  color: #7a57d1; /* A brighter shade for emphasis */
+  color: #7a57d1;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .owner-card {
-    width: calc(50% - 20px); /* 2 items per row */
+    width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
   .owner-card {
-    width: 100%; /* 1 item per row */
+    width: 100%;
   }
 }
