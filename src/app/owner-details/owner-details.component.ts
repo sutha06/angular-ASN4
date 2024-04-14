@@ -10,6 +10,7 @@ import {OwnerDataService} from "../owner-data.service";
 })
 export class OwnerDetailsComponent {
 
+  displayedColumns: string[] = ['firstName', 'lastName'];
   owners: Observable<Owner[]>;
 
   constructor(ownerDataService: OwnerDataService) {

@@ -1,8 +1,13 @@
 <h2>Owner Catalog</h2>
-<table>
-  <tr *ngFor="let f of (owners | async)">
-    <td>
-      <span class="owner_fname">First Name: {{f.firstName}}</span>&nbsp;&nbsp;
-      <span class="owner_lname">Last Name: {{f.lastName}}</span>
-  </tr>
-</table>
+<p>
+  <a routerLink="/">Home</a><br>
+  <a routerLink="/pets">Pets Catalog</a>
+</p>
+<div class="owner-catalog">
+  <div class="owner-card" *ngFor="let owner of (owners | async)">
+    <div class="owner-details">
+      <div class="owner-name">First Name: <span>{{ owner.firstName }}</span></div>
+      <div class="owner-name">Last Name: <span>{{ owner.lastName }}</span></div>
+    </div>
+  </div>
+</div>

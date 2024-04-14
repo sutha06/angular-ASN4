@@ -1,28 +1,60 @@
-.owner_fname{
-  color: #673ab7;
-  font-size: larger;
-  font-weight: bolder;
+h2 {
+  text-align: center;
+  color: #5e4b8b; /* Deep purple for headings */
+  margin-bottom: 20px;
+  font-size: 2em;
 }
 
-.owner_lname{
-  font-size: larger;
-  font-weight: bolder;
-  color: #ff9800;
-  margin-left: 1em;
+.owner-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f3f1f5; /* Light purple background for the catalog area */
 }
 
-
-.text_box{
-  width: 300px;
+.owner-card {
+  background: #ffffff;
+  border-left: 5px solid #7a57d1; /* A purple accent on the card */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(94, 75, 139, 0.2); /* Purple-tinted shadow */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: calc(33.333% - 20px); /* 3 items per row with 20px gap */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
-a{
-  color: limegreen;
-  font-weight: bolder;
+.owner-card:hover {
+  transform: translateY(-5px); /* Slight raise effect on hover */
+  box-shadow: 0 6px 12px rgba(94, 75, 139, 0.3);
 }
 
-p.message {
-  font-size: larger;
-  font-weight: bolder;
-  color: crimson;
+.owner-details {
+  margin-bottom: 10px;
+}
+
+.owner-name {
+  font-size: 1em;
+  color: #5e4b8b; /* Echoing the purple theme in text */
+  margin: 5px 0;
+}
+
+.owner-name span {
+  font-weight: bold;
+  color: #7a57d1; /* A brighter shade for emphasis */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .owner-card {
+    width: calc(50% - 20px); /* 2 items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .owner-card {
+    width: 100%; /* 1 item per row */
+  }
 }
