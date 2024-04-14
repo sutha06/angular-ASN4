@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Pet} from "././pet";
+import {Pet} from "./pet";
 import {DataJson, PetJson} from "./json-structure";
 import {HttpClient} from "@angular/common/http";
 import {map, Observable} from "rxjs";

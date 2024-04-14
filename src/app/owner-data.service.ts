@@ -12,7 +12,7 @@ export class OwnerDataService {
   constructor(private http: HttpClient) {
   }
 
-  // private static imageFolder: string = 'http://localhost:8080/images/pets/';
+  //private static imageFolder: string = 'http://localhost:8080/images/pets';
   private static dataUrl: string = 'http://localhost:8080/api/owners';
 
   private static json2Owner(ownerJson: OwnerJson): Owner {

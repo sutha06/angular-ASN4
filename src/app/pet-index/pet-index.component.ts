@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Pet} from ".././pet";
+import {Pet} from "../pet";
 import {PetDataService} from "../pet-data.service";
 import {Observable} from "rxjs";
 
