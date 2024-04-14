@@ -16,11 +16,12 @@ export class PetDataService {
   private static dataUrl: string = 'http://localhost:8080/api/pets';
 
   private static json2Pet(petJson: PetJson): Pet {
+    console.log(petJson);
     const pet: Pet = new Pet();
     pet.name = petJson.name;
     pet.petKind = petJson.petKind
     pet.age = petJson.age;
-    pet.petImgSrc = PetDataService.imageFolder + petJson.petPicture
+    pet.petPhoto = PetDataService.imageFolder + petJson.image.imgSrc
     return pet;
   }
 

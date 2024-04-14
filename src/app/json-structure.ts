@@ -5,7 +5,7 @@ export interface PetJson {
   name: string;
   petKind: string;
   age: number;
-  petPicture: PictureJson;
+  image: PictureJson;
 }
 export interface CatalogJson {
   pets: PetJson[];

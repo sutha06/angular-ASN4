@@ -1,8 +1,9 @@
 <h2>Pet Catalog</h2>
 <table>
-  <tr *ngFor="let f of (pets | async)">
+  <tr *ngFor="let f of (petsList | async)">
     <td>
-      <img class="thumb" [src]="f.petImgSrc" [alt]="f.petKind">
+      <img class="thumb"
+           [src]="f.petPhoto" >
     </td>
     <td>
       <span class="pet_name">Name: {{f.name}}</span>&nbsp;&nbsp;

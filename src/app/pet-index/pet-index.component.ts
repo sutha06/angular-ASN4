@@ -10,9 +10,9 @@ import {Observable} from "rxjs";
 })
 export class PetIndexComponent {
 
-  pets: Observable<Pet[]>;
+  petsList: Observable<Pet[]>;
 
   constructor(petDataService: PetDataService) {
-    this.pets = petDataService.getAllPets();
+    this.petsList = petDataService.getAllPets();
   }
 }
