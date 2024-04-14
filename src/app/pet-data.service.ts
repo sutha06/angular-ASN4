@@ -16,12 +16,12 @@ export class PetDataService {
   private static dataUrl: string = 'http://localhost:8080/api/pets';
 
   private static json2Pet(petJson: PetJson): Pet {
-    console.log(petJson);
     const pet: Pet = new Pet();
+    pet.id = petJson.id;
     pet.name = petJson.name;
     pet.petKind = petJson.petKind
     pet.age = petJson.age;
-    pet.petPhoto = PetDataService.imageFolder + petJson.image.imgSrc
+    pet.imageSrc = PetDataService.imageFolder + petJson.image
     return pet;
   }
 
@@ -33,8 +33,8 @@ export class PetDataService {
       )
   }
 
-  public getPetByName(name: string): Observable<Pet | undefined>{
-    return this.http.get<PetJson>(`${PetDataService.dataUrl}/${name}`)
+  public getPetByName(id: string): Observable<Pet | undefined>{
+    return this.http.get<PetJson>(`${PetDataService.dataUrl}/${id}`)
       .pipe(map(pet => PetDataService.json2Pet(pet)));
   }
 }

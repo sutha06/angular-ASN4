@@ -10,7 +10,9 @@ import {Observable} from "rxjs";
 })
 export class PetIndexComponent {
 
+
   petsList: Observable<Pet[]>;
+  displayedColumns: string[] = ['image', 'name', 'age', 'petType'];
 
   constructor(petDataService: PetDataService) {
     this.petsList = petDataService.getAllPets();
